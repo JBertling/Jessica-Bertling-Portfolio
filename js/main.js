@@ -1,4 +1,3 @@
-$(".menu").css("margin-right","-240px");
 $("#menu-trigger").click(function() {
   if ($(this).hasClass("open")) {
     $(".menu").animate({
@@ -14,5 +13,4 @@ $("#menu-trigger").click(function() {
       $("#menu-trigger .fa").removeClass("fa-navicon").addClass("fa-close");
     });
   }
-
 });

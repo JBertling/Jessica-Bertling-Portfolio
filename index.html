@@ -14,50 +14,75 @@
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/font-awesome.min.css">
-        <script src="js/picturefill.min.js"></script>
+<link href='https://fonts.googleapis.com/css?family=Josefin+Sans:400,700|Josefin+Slab:400,700' rel='stylesheet' type='text/css'>        <script src="js/picturefill.min.js"></script>
 
     </head>
     <body>
-        <header class="selfclear">
-          <div class="row side-space">
-            <div class="col_6_6_9">
-              <a class="logo-link" title="Jessica Bertling | Return to Top" href="#top">Jessica Bertling</a>
+        <header class="selfclear transition">
+          <div class="row">
+            <div class="col_6_5_9">
+              <a class="incognito logo-link" title="Jessica Bertling | Return to Top" href="#top">Jessica Bertling</a>
             </div>
-            <div class="col_6_6_3 omega textright">
-              <span class="button" id="menu-trigger"><i class="fa fa-navicon"></i> Menu</span>
+            <div class="col_6_7_3 omega textright">
+              <span id="menu-trigger"><i class="fa fa-navicon"></i> Menu</span>
               <nav class="menu">
-                <ul>
+                <ul class="no-bullets">
                   <li><a title="Home" href="#top">Home</a></li>
+                  <li><a title="About Me" href="#about">About</a></li>
+                  <li><a title="Jessica's Portfolio" href="#portfolio">Portfolio</a></li>
+                  <li><a title="Contact Jess" href="#contact">Contact</a></li>
                 </ul>
               </nav>
             </div>
           </div>
         </header>
         <section class="full-height" id="top">
+          <div class="col_6_12_12 content-container">
+            <div class="row flush">
+              <h1>Hi, I'm Jess.</h1>
+              <h2>I work to grow fresh food &amp; ideas in the&nbsp;Heartland.</h2>
+            </div>
+          </div>
+          <div class="col_6_6_12 full-height floatright omega">
+            <figure class="background-image full-height"></figure>
+          </div>
           <div class="col_6_6_12">
-            Content
+            <p>
+              I'm a Web Designer and Front End Developer based out of Eastern Iowa. I specialize in
+              responsive web design, e-commerce, usability, and performance. When I'm not working
+              you can find me playing guitar, digging in the garden, fly fishing, or just being
+              an all around river rat.
+            </p>
+            <p>
+              <a class="button" title="More About Me" href="#about">More About Me <i class="fa fa-angle-down"></i></a>
+            </p>
           </div>
-          <div class="col_6_6_12 full-height omega">
-            <picture> <!-- GO BACK AND DO THE IMAGE WORK -->
-              <source srcset="img/selfie.jpg" media="(max-width: 768px)">
-              <source srcset="img/selfie.jpg">
-              <img srcset="img/selfie.jpg" alt="Photo of Jessica Bertling">
-            </picture>
+        </section>
+        <section class="full-height" id="about">
+          <div class="col_6_6_6">
+            <div class="content-container">
+              <div class="row side-space">
+                <h1>About Me</h1>
+              </div>
+            </div>
           </div>
         </section>
-        <section class="full-height-frame">
-          skills
+        <section class="full-height" id="portfolio">
+          <div class="row side-space textcenter">
+            <h1>My Work</h1>
+            <nav>
+              <ul class="no-bullets horiz">
+                <li><a href="" title="">Link</li>
+                <li><a href="" title="">Link</li>
+                <li><a href="" title="">Link</li>
+              </ul>
+            </nav>
+          </div>
         </section>
-        <section class="full-height-frame">
-          about?
-        </section>
-        <section class="full-height-frame">
-          portfolio
-        </section>
-        <section class="full-height-frame">
+        <section class="full-height" id="contact">
           contact
         </section>
-        <section class="full-height-frame">
+        <section class="full-height">
           footer
         </section>
 

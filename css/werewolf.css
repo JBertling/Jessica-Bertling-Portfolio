@@ -1,15 +1,3 @@
-.last, .omega {margin-right: 0 !important;}
-img, object, embed {max-width: 100%;}
-.clear, .clearboth {clear:both !important;}
-.clearleft {clear:left !important;}
-.clearright {clear:right !important;}
-.textcenter {text-align:center;}
-.textright {text-align:right;}
-.textleft {text-align:left;}
-.floatright {float:right;}
-.selfclear:after {clear:both; content:"."; display:block; height:0; visibility:hidden;}
-.mobile-only {display: none;}
-
 /* DESKTOP */
 /* Column code based on work from cssgrid.net:
 The 1140px Grid by Andy Taylor – http://cssgrid.net – http://www.twitter.com/andytlr – http://www.catchingzebra.com */
@@ -53,7 +41,7 @@ The 1140px Grid by Andy Taylor – http://cssgrid.net – http://www.twitter.com
     .col_5_12_4, .col_5_12_12,
 .col_6_3_6,
     .col_6_4_5, .col_6_4_6, .col_6_4_12,
-    .col_6_5_8, .col_6_5_12,
+    .col_6_5_8, .col_6_5_9, .col_6_5_12,
     .col_6_6_3, .col_6_6_5, .col_6_6_6, .col_6_6_7, .col_6_6_9, .col_6_6_10, .col_6_6_12,
     .col_6_7_12,
     .col_6_8_8, .col_6_8_9, .col_6_8_12,
@@ -142,7 +130,7 @@ The 1140px Grid by Andy Taylor – http://cssgrid.net – http://www.twitter.com
 
     .col_6_3_6,
     .col_6_4_5, .col_6_4_6, .col_6_4_12,
-    .col_6_5_8, .col_6_5_12,
+    .col_6_5_8, .col_6_5_9, .col_6_5_12,
     .col_6_6_3, .col_6_6_5, .col_6_6_6, .col_6_6_7, .col_6_6_9, .col_6_6_10, .col_6_6_12,
     .col_6_7_12,
     .col_6_8_8, .col_6_8_9, .col_6_8_12,
@@ -252,7 +240,7 @@ The 1140px Grid by Andy Taylor – http://cssgrid.net – http://www.twitter.com
     .col_5_10_9, .col_5_10_12,
     .col_6_3_6,
     .col_6_4_5, .col_6_4_6, .col_6_4_12,
-    .col_6_5_8, .col_6_5_12,
+    .col_6_5_8, .col_6_5_9, .col_6_5_12,
     .col_6_6_3, .col_6_6_5, .col_6_6_6, .col_6_6_7, .col_6_6_9, .col_6_6_10, .col_6_6_12,
     .col_6_7_12,
     .col_6_8_8, .col_6_8_9, .col_6_8_12,
@@ -327,7 +315,7 @@ The 1140px Grid by Andy Taylor – http://cssgrid.net – http://www.twitter.com
     .col_3_5_5, .col_3_5_6, .col_3_5_12,
     .col_4_5_1, .col_4_5_3, .col_4_5_5, .col_4_5_6, .col_4_5_12,
     .col_5_5_4, .col_5_5_5, .col_5_5_6, .col_5_5_9, .col_5_5_12,
-    .col_6_5_8, .col_6_5_12,
+    .col_6_5_8, .col_6_5_9, .col_6_5_12,
     .col_8_5_12,
     .col_12_5_12
     {
@@ -421,8 +409,6 @@ The 1140px Grid by Andy Taylor – http://cssgrid.net – http://www.twitter.com
 ///////////////////////////////////////////// */
 
 @media only screen and (max-width: 600px) {
-    body { color: green;}
-
     .row, .body, .container {
         width: 100%;
         margin-left:0;
@@ -499,7 +485,7 @@ The 1140px Grid by Andy Taylor – http://cssgrid.net – http://www.twitter.com
     .col_5_8_8,
     .col_5_10_9,
     .col_5_12_4,
-    .col_6_3_6, .col_6_4_5, .col_6_4_6, .col_6_5_8, .col_6_6_3, .col_6_6_5, .col_6_6_6, .col_6_6_7, .col_6_6_9, .col_6_6_10,
+    .col_6_3_6, .col_6_4_5, .col_6_4_6, .col_6_5_8, .col_6_5_9, .col_6_6_3, .col_6_6_5, .col_6_6_6, .col_6_6_7, .col_6_6_9, .col_6_6_10,
     .col_6_8_8, .col_6_8_9,
     .col_7_6_6,
     .col_7_7_6, .col_7_7_7, .col_7_7_8,
@@ -608,7 +594,7 @@ The 1140px Grid by Andy Taylor – http://cssgrid.net – http://www.twitter.com
     .col_1_2_9,
     .col_4_3_9, .col_4_4_9,
     .col_5_5_9, .col_5_10_9,
-    .col_6_6_9, .col_6_8_9,
+    .col_6_5_9, .col_6_6_9, .col_6_8_9,
     .col_8_7_9,
     .col_9_7_9, .col_9_9_9,
     .col_10_9_9,
@@ -647,3 +633,15 @@ The 1140px Grid by Andy Taylor – http://cssgrid.net – http://www.twitter.com
     .mobile-margin {margin-right: 0;}
     .median-margin {margin-right: 0;}
 }
+
+.last, .omega {margin-right: 0 !important;}
+img, object, embed {max-width: 100%;}
+.clear, .clearboth {clear:both !important;}
+.clearleft {clear:left !important;}
+.clearright {clear:right !important;}
+.textcenter {text-align:center;}
+.textright {text-align:right;}
+.textleft {text-align:left;}
+.floatright {float:right;}
+.selfclear:after {clear:both; content:"."; display:block; height:0; visibility:hidden;}
+.mobile-only {display: none;}

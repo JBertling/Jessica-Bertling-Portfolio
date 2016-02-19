@@ -4,18 +4,15 @@ body {
 }
 
 html {
-    color: #222;
+    color: #ccc;
     font-size: 1em;
     line-height: 1.4;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
-/*
- * Remove text-shadow in selection highlight:
- * https://twitter.com/miketaylr/status/12228805301
- *
- * These selection rule sets have to be separate.
- * Customize the background color to match your design.
- */
+section {
+  position: relative;
+}
 
 ::-moz-selection {
     background: #b3d4fc;
@@ -27,10 +24,6 @@ html {
     text-shadow: none;
 }
 
-/*
- * A better looking default horizontal rule
- */
-
 hr {
     display: block;
     height: 1px;
@@ -40,12 +33,6 @@ hr {
     padding: 0;
 }
 
-/*
- * Remove the gap between audio, canvas, iframes,
- * images, videos and the bottom of their containers:
- * https://github.com/h5bp/html5-boilerplate/issues/440
- */
-
 audio,
 canvas,
 iframe,
@@ -54,10 +41,6 @@ svg,
 video {
     vertical-align: middle;
 }
-
-/*
- * Remove default fieldset styles.
- */
 
 fieldset {
     border: 0;
@@ -77,22 +60,68 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
- .full-height {
-   height: 100%;
-   overflow: hidden;
- }
-
- .side-space {
-   padding-right: 20px;
-   padding-left: 20px;
- }
 
  .row {
    width: auto;
  }
 
+ .row.flush {
+   padding-right: 0;
+   padding-left: 0;
+ }
+
+ .fa {
+   vertical-align: text-bottom;
+ }
+
+ a {
+   color: inherit;
+ }
+
+ a.incognito {
+   text-decoration: none;
+ }
+
  .button {
    cursor: pointer;
+   display: inline-block;
+   padding: 5px 20px;
+   line-height: 30px;
+   border-radius: 15px;
+   border: solid 2px #a1b965;
+   text-decoration: none;
+   font-weight: bold; font-weight: 700;
+   font-family: 'Josefin Slab', Serif;
+   font-size: 1.1em;
+   color: #fff;
+   background-color: #b4d06c;
+   font-weight: bold;
+ }
+
+ .transition {
+   transition: all 0.3s ease;
+ }
+
+ ul {
+   margin: 0;
+   padding: 0;
+ }
+
+ ul.no-bullets {
+   list-style-type: none;
+ }
+
+ ul.horiz li {
+   display: inline-block;
+   margin-left: 20px;
+ }
+
+ ul.horiz li:first-child {
+   margin-left: 0;
+ }
+
+ picture {
+   display: block;
  }
 
  header {
@@ -101,22 +130,193 @@ textarea {
    width: 100%;
    top: 0;
    left: 0;
-   padding: 20px 0;
+   padding: 10px 0;
    background: #fff;
  }
 
- .menu {
-   position: fixed;
-   right: 0;
-   width: 200px;
-   height: 100%;
-   margin-top: 20px;
-   padding-left: 20px;
-   padding-right: 20px;
-   background: green;
+h1,
+h2 {
+  font-family: 'Josefin Slab', sans-serif;
+  font-weight: bold; font-weight: 700;
+}
+
+p {
+  line-height: 2em;
+  font-size: 1em;
+  font-weight: normal;
+}
+
+#top {
+  color: #758f51;
+}
+
+#top h1 {
+  margin: 0;
+  color: #ecc26f;
+  line-height: 1em;
+}
+
+#top h2 {
+  margin: 0;
+  font-size: 1.3em
+  line-height: normal;
+  color: #c3db7c;
+  letter-spacing: 1px;
+}
+
+#top figure {
+  max-width: 500px;
+  min-height: 400px;
+  margin: 0 auto;
+  background-image: url(../img/intro.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center bottom;
+}
+
+#about {
+  background: #c3db7c;
+}
+
+/* MOBILE ONLY */
+@media only screen and (max-width: 600px) {
+  section,
+  .row {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
+  header {
+    color: #666;
+  }
+
+  .logo-link {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  #menu-trigger {
+    cursor: pointer;
+  }
+
+  .menu {
+    position: fixed;
+    right: 0;
+    width: 100px;
+    height: 100%;
+    margin-top: 10px;
+    margin-right: -240px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background: rgba(255,255,255,1);
+  }
+
+ .menu li {
+   padding: 20px 0;
+   border-top: solid 1px #ccc;
  }
 
+ .menu li:first-child {
+   border-top: 0;
+ }
 
+ #top {
+   padding-bottom: 110px;
+   background-image: url(../img/intro.jpg);
+   background-repeat: no-repeat;
+   background-size: contain;
+   background-position: 100px 365px;
+ }
+
+ #top .content-container {
+   padding: 70px 0 0;
+ }
+
+ #top figure {
+   display: none;
+ }
+
+ h1 {
+   font-size: 3em;
+ }
+}
+
+/* NOT MOBILE */
+@media only screen and (min-width: 601px) {
+  header:hover {
+    color: #666;
+  }
+
+  .logo-link {
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  #menu-trigger {
+    display: none;
+  }
+
+  .menu {
+    display: block;
+    position: static;
+    font-size: .9em;
+    margin-right: 0;
+  }
+
+ .menu li {
+   display: inline-block;
+ }
+
+ .menu a {
+   display: block;
+   padding: 10px 10px 0;
+ }
+
+ h1 {
+   font-size: 5em;
+ }
+
+}
+
+/* TABLET ONLY */
+@media only screen and (min-width: 601px) and (max-width: 900px) {
+  section,
+  .row {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  #top .content-container {
+    padding: 100px 0 0;
+  }
+  #top figure {
+    max-height: 400px;
+    background-position: center top;
+  }
+}
+
+/* DESKTOP ONLY */
+@media only screen and (min-width: 900px) {
+  section,
+  .row {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+  #top {
+    max-width: 1000px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  #top figure {
+    background-position: center center;
+  }
+  #top .content-container {
+    padding: 160px 0 0;
+  }
+  .full-height {
+    height: 100%;
+    overflow: hidden;
+  }
+}
 
 
 
