@@ -142,6 +142,10 @@ h2 {
   font-weight: bold; font-weight: 700;
 }
 
+h1 {
+  margin-bottom: 10px;
+}
+
 p {
   line-height: 2em;
   font-size: 1em;
@@ -180,6 +184,54 @@ p {
 
 #about {
   background: #c3db7c;
+}
+
+#portfolio {
+  color: #666;
+}
+
+.gallery nav li {
+  margin-left: 10px;
+}
+
+.gallery nav a {
+  padding: 5px;
+  line-height: 30px;
+  text-decoration: none;
+}
+
+.gallery nav a:hover {
+  color: #fff;
+  background-color: #d4ec98;
+}
+
+.gallery nav .active,
+.gallery nav .active:hover {
+  color: #fff;
+  background-color: #b4d06c;
+}
+
+.gallery figure {
+  height: 200px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.gallery figure {
+  position: relative;
+  padding: 10px;
+  border: solid 1px #ccc;
+}
+
+.gallery figcaption {
+  position: absolute;
+  bottom: 0;
+  padding: 10px 2%;
+  left: 0;
+  width: 96%;
+  height: 30px;
+  background: rgba(0,0,0,0.1);
+  text-decoration: none;
 }
 
 /* MOBILE ONLY */
@@ -291,6 +343,10 @@ p {
     background-size: 400px;
     background-position: 420px 50px;
   }
+  .gallery article {
+    margin-right: 1.2% !important;
+    margin-left: 1.2% !important
+  }
 }
 
 /* DESKTOP ONLY */
@@ -313,6 +369,10 @@ p {
   .full-height {
     height: 100%;
     overflow: hidden;
+  }
+  .gallery article {
+    margin-right: 1.4% !important;
+    margin-left: 1.4% !important
   }
 }
 

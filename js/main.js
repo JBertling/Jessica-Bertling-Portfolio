@@ -14,3 +14,29 @@ $("#menu-trigger").click(function() {
     });
   }
 });
+
+$(".gallery nav a").click(function() {
+  $(".gallery nav a").removeClass("active");
+  $(this).addClass("active");
+
+  var galleryType = $(this).attr("rel");
+  if (galleryType == "web") {
+    $(".gallery article").fadeOut();
+    $(".gallery article").each(function() {
+      if ($(this).data("gallery") == "web") {
+        $(this).fadeIn();
+      }
+    });
+  } else if (galleryType == "print") {
+    $(".gallery article").fadeOut();
+    $(".gallery article").each(function() {
+      if ($(this).data("gallery") == "print") {
+        $(this).fadeIn();
+      }
+    });
+  } else {
+    $(".gallery article").fadeIn();
+  }
+
+  return false;
+});
