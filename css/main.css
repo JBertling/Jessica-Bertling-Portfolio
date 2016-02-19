@@ -12,15 +12,17 @@ html {
 
 section {
   position: relative;
+  clear: both;
+  overflow: hidden;
 }
 
 ::-moz-selection {
-    background: #b3d4fc;
+    background: #e9fbc1;
     text-shadow: none;
 }
 
 ::selection {
-    background: #b3d4fc;
+    background: #e9fbc1;
     text-shadow: none;
 }
 
@@ -148,6 +150,8 @@ p {
 
 #top {
   color: #758f51;
+  background-image: url(../img/intro.jpg);
+  background-repeat: no-repeat;
 }
 
 #top h1 {
@@ -222,18 +226,12 @@ p {
 
  #top {
    padding-bottom: 110px;
-   background-image: url(../img/intro.jpg);
-   background-repeat: no-repeat;
    background-size: contain;
    background-position: 100px 365px;
  }
 
  #top .content-container {
    padding: 70px 0 0;
- }
-
- #top figure {
-   display: none;
  }
 
  h1 {
@@ -287,10 +285,11 @@ p {
   }
   #top .content-container {
     padding: 100px 0 0;
+    max-width: 385px;
   }
-  #top figure {
-    max-height: 400px;
-    background-position: center top;
+  #top {
+    background-size: 400px;
+    background-position: 420px 50px;
   }
 }
 
@@ -302,12 +301,11 @@ p {
     padding-left: 40px;
   }
   #top {
-    max-width: 1000px;
+    max-width: 930px;
     margin-right: auto;
     margin-left: auto;
-  }
-  #top figure {
-    background-position: center center;
+    background-size: 460px;
+    background-position: right 75px;
   }
   #top .content-container {
     padding: 160px 0 0;
