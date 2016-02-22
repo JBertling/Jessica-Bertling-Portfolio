@@ -217,14 +217,13 @@ p {
 }
 
 .gallery figure {
-  height: 200px;
   margin-top: 20px;
   margin-bottom: 20px;
 }
 
 .gallery figure {
   position: relative;
-  padding: 10px;
+  padding: 10px 10px 70px;
   border: solid 1px #ccc;
 }
 
@@ -234,7 +233,6 @@ p {
   padding: 10px 2%;
   left: 0;
   width: 96%;
-  height: 30px;
   background: rgba(0,0,0,0.1);
   text-decoration: none;
 }
