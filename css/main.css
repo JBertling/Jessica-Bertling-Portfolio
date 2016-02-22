@@ -26,15 +26,6 @@ section {
     text-shadow: none;
 }
 
-hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
-    padding: 0;
-}
-
 audio,
 canvas,
 iframe,
@@ -44,24 +35,34 @@ video {
     vertical-align: middle;
 }
 
-fieldset {
-    border: 0;
-    margin: 0;
-    padding: 0;
+input[type="text"],
+input[type="email"],
+textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 10px;
+  color: #333;
+  box-sizing: border-box;
 }
-
-/*
- * Allow only vertical resizing of textareas.
- */
 
 textarea {
     resize: vertical;
+    min-height: 250px;
 }
 
-
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
+::-webkit-input-placeholder {
+  color: #ccc;
+}
+::-moz-placeholder {
+  color: #ccc;
+}
+:-ms-input-placeholder {
+  color: #ccc;
+}
+:-moz-placeholder {
+  color: #ccc;
+}
 
  .row {
    width: auto;
@@ -84,7 +85,8 @@ textarea {
    text-decoration: none;
  }
 
- .button {
+ .button,
+ input[type="submit"] {
    cursor: pointer;
    display: inline-block;
    padding: 5px 20px;
@@ -182,7 +184,8 @@ p {
   background-position: center bottom;
 }
 
-#about {
+#about,
+#contact {
   color: #fff;
   background: #c3db7c;
 }
@@ -193,6 +196,7 @@ p {
 
 #portfolio {
   color: #666;
+  padding-bottom: 40px;
 }
 
 .gallery nav li {
@@ -235,6 +239,18 @@ p {
   width: 96%;
   background: rgba(0,0,0,0.1);
   text-decoration: none;
+}
+
+#contact {
+  background-color: #ecc26f;
+}
+
+#contact a {
+  margin-left: 10px;
+}
+
+#contact a:first-child {
+  margin-left: 0;
 }
 
 /* MOBILE ONLY */
@@ -403,13 +419,6 @@ p {
 
 
 
-/* ==========================================================================
-   Helper classes
-   ========================================================================== */
-
-/*
- * Hide visually and from screen readers
- */
 
 .hidden {
     display: none !important;
