@@ -183,7 +183,12 @@ p {
 }
 
 #about {
+  color: #fff;
   background: #c3db7c;
+}
+
+#about article {
+  margin-bottom: 40px;
 }
 
 #portfolio {
@@ -286,6 +291,10 @@ p {
    padding: 70px 0 0;
  }
 
+ #about .button {
+   margin: 10px auto;
+ }
+
  h1 {
    font-size: 3em;
  }
@@ -320,6 +329,10 @@ p {
  .menu a {
    display: block;
    padding: 10px 10px 0;
+ }
+
+ #about .button:first-child {
+   margin-right: 20px;
  }
 
  h1 {
