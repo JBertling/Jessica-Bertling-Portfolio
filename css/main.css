@@ -196,7 +196,6 @@ p {
 #portfolio {
   color: #666;
   padding-bottom: 40px;
-  background-color: #e2f7a6;
 }
 
 .gallery nav li {
@@ -228,7 +227,7 @@ p {
 
 .gallery figure {
   position: relative;
-  padding: 10px 10px 100px;
+  padding: 5px 5px 65px;
   border: solid 1px #ccc;
 }
 
@@ -236,6 +235,7 @@ p {
   position: absolute;
   bottom: 0;
   padding: 10px 2%;
+  z-index: 50;
   left: 0;
   width: 96%;
   background: rgba(0,0,0,0.1);
@@ -249,15 +249,13 @@ p {
 }
 
 #contact {
+  padding-top: 60px;
   color: #333;
+  background-color: #d5edb0;
 }
 
-#contact a {
-  margin-left: 10px;
-}
-
-#contact a:first-child {
-  margin-left: 0;
+#contact h1 {
+  font-size: 3.5em;
 }
 
 footer {
@@ -324,6 +322,11 @@ footer {
  h1 {
    font-size: 3em;
  }
+
+ #contact {
+   padding-bottom: 30px;
+ }
+
  footer {
    padding: 20px;
    font-size: .9em;
@@ -361,12 +364,25 @@ footer {
    padding: 10px 10px 0;
  }
 
+ .gallery {
+   margin-top: 20px;
+ }
+
  #about .button:first-child {
    margin-right: 20px;
  }
 
  h1 {
    font-size: 5em;
+ }
+
+ #contact {
+   padding-top: 60px;
+   background-color: #d5edb0;
+   background-image: url(../img/contact-back.jpg);
+   background-repeat: no-repeat;
+   background-position: -30px center;
+   background-size: contain;
  }
 
  footer {
@@ -394,6 +410,11 @@ footer {
     margin-right: 1.2% !important;
     margin-left: 1.2% !important
   }
+   #contact {
+     padding-bottom: 20px;
+     padding-top: 40px;
+     background-position: -200px center;
+   }
 }
 
 /* DESKTOP ONLY */
@@ -420,6 +441,10 @@ footer {
   .gallery article {
     margin-right: 1.4% !important;
     margin-left: 1.4% !important
+  }
+  #contact {
+    padding-top: 60px;
+    background-position: -30px center;
   }
 }
 
