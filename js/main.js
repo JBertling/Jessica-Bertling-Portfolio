@@ -49,3 +49,8 @@ $(".scrollTo").click(function() {
   }, 2000);
   return false;
 });
+
+$(".hide-this").click(function() {
+  $(this).parent().slideUp();
+  return false;
+});
