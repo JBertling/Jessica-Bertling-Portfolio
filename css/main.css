@@ -48,7 +48,7 @@ textarea {
 
 textarea {
     resize: vertical;
-    min-height: 250px;
+    min-height: 100px;
 }
 
 ::-webkit-input-placeholder {
@@ -184,8 +184,7 @@ p {
   background-position: center bottom;
 }
 
-#about,
-#contact {
+#about {
   color: #fff;
   background: #c3db7c;
 }
@@ -197,6 +196,7 @@ p {
 #portfolio {
   color: #666;
   padding-bottom: 40px;
+  background-color: #e2f7a6;
 }
 
 .gallery nav li {
@@ -223,11 +223,12 @@ p {
 .gallery figure {
   margin-top: 20px;
   margin-bottom: 20px;
+  background: #fff;
 }
 
 .gallery figure {
   position: relative;
-  padding: 10px 10px 70px;
+  padding: 10px 10px 100px;
   border: solid 1px #ccc;
 }
 
@@ -239,10 +240,16 @@ p {
   width: 96%;
   background: rgba(0,0,0,0.1);
   text-decoration: none;
+  font-size: 0.8em;
+}
+
+.gallery figcaption::first-line {
+  font-size: 1.2em;
+  font-weight: bold;
 }
 
 #contact {
-  background-color: #ecc26f;
+  color: #333;
 }
 
 #contact a {
@@ -251,6 +258,11 @@ p {
 
 #contact a:first-child {
   margin-left: 0;
+}
+
+footer {
+  padding: 40px;
+  color: #333;
 }
 
 /* MOBILE ONLY */
@@ -312,6 +324,10 @@ p {
  h1 {
    font-size: 3em;
  }
+ footer {
+   padding: 20px;
+   font-size: .9em;
+ }
 }
 
 /* NOT MOBILE */
@@ -351,6 +367,10 @@ p {
 
  h1 {
    font-size: 5em;
+ }
+
+ footer {
+   padding: 40px;
  }
 
 }
