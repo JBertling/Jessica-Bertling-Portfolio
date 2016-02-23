@@ -40,3 +40,12 @@ $(".gallery nav a").click(function() {
 
   return false;
 });
+
+$(".scrollTo").click(function() {
+  var destination = "#" + $(this).attr("rel");
+  var offset = 0; //Offset of 20px
+  $('html, body').animate({
+      scrollTop: $(destination).offset().top + offset
+  }, 2000);
+  return false;
+});
